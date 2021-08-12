@@ -1,0 +1,278 @@
+:root {
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: white;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+body p {
+    font-size: 16px;
+}
+
+.card {
+    width: 87vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 19vw;
+    border-radius: 5vw;
+    background-color: white;
+}
+
+.image {
+    border-radius: 5vw 5vw 0 0;
+    width: 90vw;
+}
+
+.header {
+    margin-top: 7.7vw;
+}
+
+.header-title {
+    text-align: center;
+    color: black;
+    font-size: 5.9vw;
+    font-weight: 900;
+}
+
+.card-body {
+    margin-top: 4vw;
+}
+
+.card-body-text {
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    text-align: center;
+    font-size: 4.05vw;
+    line-height: 6.7vw;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.annual-plan-wrapper {
+    padding-top: 7vw;
+    padding-bottom: 5vw;
+}
+
+.music-icon-wrapper {
+    width: fit-content;
+    margin-left: 11vw;
+}
+
+.music-icon {
+    width: 12vw;
+}
+
+.annual-plan-text-wrapper {
+    width: 25vw;
+    margin-left: 28.5vw;
+    margin-top: -12vw;
+}
+
+.annual-plan-header {
+    font-size: 3.75vw;
+    font-weight: 900;
+    color: black;
+}
+
+.annual-plan-payment {
+    color: var(--desaturated-blue);
+    font-size: 3.9vw;
+}
+
+.annual-plan-button-wrapper {
+    width: fit-content;
+    margin-left: 62.1vw;
+    margin-top: -13.5vw;
+}
+
+.annual-plan-button {
+    font-size: 3.4vw;
+    font-weight: 900;
+    text-decoration: underline;
+    color: blue;
+    border: none;
+    outline: none;
+}
+
+.annual-plan-button:hover, .annual-plan-button:active, .annual-plan-button:focus {
+    border: none;
+    outline: none;
+}
+
+.annual-plan-button:active {
+    color: #ff2503;
+}
+
+.payment-buttons-wrapper {
+    height: 42.4vw;
+    border-radius: 0 0 5vw 5vw;
+}
+
+.proceed-wrapper {
+    padding-top: 8.5vw;
+}
+
+.proceed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw;
+    height: 14vw;
+    border-radius: 4vw;
+    background-color: var(--bright-blue);
+    color: white;
+    border: none;
+    font-weight: 900;
+    font-size: 4vw;
+}
+
+.cancel-wrapper {
+    margin-top: 4.1vw;
+}
+
+.cancel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+    color: var(--desaturated-blue);
+    font-size: 3.95vw;
+    border: none;
+}
+
+.attribution { 
+    font-size: 2.5vw; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .card {
+        width: 31vw;
+        margin-top: 7vw;
+        border-radius: 1.3vw;
+    }
+
+    .image {
+        border-radius: 1.3vw 1.3vw 0 0;
+    }
+
+    .header {
+        margin-top: 2.9vw;
+    }
+    
+    .header-title {
+        font-size: 1.94vw;
+    }
+
+    .card-body {
+        margin-top: 0vw;
+    }
+    
+    .card-body-text {
+        font-size: 1.11vw;
+        line-height: 1.7vw;
+    }
+
+    .annual-plan-wrapper {
+        padding-top: 2.2vw;
+        padding-bottom: 1vw;
+    }
+    
+    .music-icon-wrapper {
+        margin-left: 5.1vw;
+    }
+    
+    .music-icon {
+        width: 3vw;
+    }
+    
+    .annual-plan-text-wrapper {
+        width: 7vw;
+        margin-left: 9.7vw;
+        margin-top: -3.3vw;
+        line-height: 1.85vw;
+    }
+    
+    .annual-plan-header {
+        font-size: 1.1vw;
+    }
+    
+    .annual-plan-payment {
+        font-size: 1.13vw;
+    }
+    
+    .annual-plan-button-wrapper {
+        margin-left: 22vw;
+        margin-top: -3.8vw;
+    }
+    
+    .annual-plan-button {
+        font-size: 0.95vw;
+    }
+
+    .annual-plan-button:hover {
+        color: hsl(245, 75%, 62%);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .payment-buttons-wrapper {
+        height: 14vw;
+        border-radius: 0 0 1.3vw 1.3vw;
+    }
+    
+    .proceed-wrapper {
+        padding-top: 3.67vw;
+    }
+    
+    .proceed {
+        width: 24.3vw;
+        height: 3.45vw;
+        border-radius: 0.7vw;
+        font-size: 1.02vw;
+    }
+
+    .proceed:hover {
+        background-color: #766cf1;
+        cursor: pointer;
+    }
+    
+    .cancel-wrapper {
+        margin-top: 1.8vw;
+    }
+    
+    .cancel {
+        font-size: 1.03vw;
+    }
+
+    .cancel:hover {
+        color: black;
+        cursor: pointer;
+    }
+    
+    .attribution { 
+        font-size: 1vw; 
+    }
+}
